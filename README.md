@@ -31,9 +31,9 @@ const ReviewPush = new reviewpush(auth);
 
 ## Usage
 
-## Reviews
+### Reviews
 
-### get
+### GET
 
 Get reviews for a location or generic, during a period.
 
@@ -55,7 +55,7 @@ If no period is set, it defaults to the last 30 days.
 
 For a detailed list of options, please visit <https://developer.reviewpush.com/REST_API/User_API/Reviews.html>.
 
-### getSentiment
+### SENTIMENT
 
 Get a reviews summary for a location, during a period.
 
