@@ -1,0 +1,41 @@
+{
+  "name": "reviewpush-node",
+  "version": "1.0.0",
+  "description": "wrapper for reviewpush rest api",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "NODE_ENV=development tsc-watch --onSuccess \"node dist/index.js\"",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franciscofsales/reviewpush-node.git"
+  },
+  "engines": {
+    "node": ">= 6.4.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/lodash": "^4.14.118",
+    "@types/node": "^10.12.9",
+    "ts-node": "^7.0.1",
+    "tsc-watch": "^1.0.30",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.1.3"
+  },
+  "author": "Francisco Sales",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franciscofsales/reviewpush-node/issues"
+  },
+  "homepage": "https://github.com/franciscofsales/reviewpush-node#readme",
+  "dependencies": {
+    "await-to-js": "^2.0.1",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11"
+  }
+}
