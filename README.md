@@ -33,7 +33,7 @@ const ReviewPush = new reviewpush(auth);
 
 ### Reviews
 
-### GET
+### Review GET
 
 Get reviews for a location or generic, during a period.
 
@@ -55,21 +55,50 @@ If no period is set, it defaults to the last 30 days.
 
 For a detailed list of options, please visit <https://developer.reviewpush.com/REST_API/User_API/Reviews.html>.
 
-### SENTIMENT
+### Location
 
-Get a reviews summary for a location, during a period.
+### Location GET
+
+Gets location information
 
 ```js
-ReviewPush.Reviews.getSentiment(options);
+ReviewPush.Location.get(options);
 ```
 
 Options:
 
-- `location_id` - Filter by a location ID
-- `date_from` - Only consider reviews added since a certain date/time
-- `date_to` - Only consider reviews added before a certain date/time
+- `id` - location id
+- `profiles` - include profiles: `true`, `false`: default is false
 
-If no period is set, it defaults to the last 30 days.
+For a detailed list of options, please visit <https://developer.reviewpush.com/REST_API/User_API/Locations.html>.
+
+### Locations By Rating
+
+Gets locations information by rating
+
+```js
+ReviewPush.Location.byRating(options);
+```
+
+Options:
+
+- `location_id` - filter by location id
+
+For a detailed list of options, please visit <https://developer.reviewpush.com/REST_API/User_API/Locations.html>.
+
+### Location Sentiment
+
+Gets locations sentiment
+
+```js
+ReviewPush.Location.getSentiment(options);
+```
+
+Options:
+
+- `location_id` - filter by location id
+- `date_from` - date from (default to 30 day from today)
+- `date_to` - date to (default to now)
 
 For a detailed list of options, please visit <https://developer.reviewpush.com/REST_API/User_API/Locations.html>.
 
