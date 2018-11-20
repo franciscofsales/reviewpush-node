@@ -2,6 +2,8 @@
 
 Wrapper for the [ReviewPush](https://www.reviewpush.com/) REST Api.
 
+**This library is still alpha. Use at your own risk**
+
 ## Index
 
 - [Install](#install)
@@ -29,9 +31,9 @@ const ReviewPush = new reviewpush(auth);
 
 ## Usage
 
-### Reviews
+## Reviews
 
-#### get
+### get
 
 Get reviews for a location or generic, during a period.
 
@@ -53,7 +55,7 @@ If no period is set, it defaults to the last 30 days.
 
 For a detailed list of options, please visit <https://developer.reviewpush.com/REST_API/User_API/Reviews.html>.
 
-#### getSentiment
+### getSentiment
 
 Get a reviews summary for a location, during a period.
 
