@@ -62,7 +62,7 @@ For a detailed list of options, please visit <https://developer.reviewpush.com/R
 Gets location information
 
 ```js
-ReviewPush.Location.get(options);
+ReviewPush.Locations.get(options);
 ```
 
 Options:
@@ -77,7 +77,7 @@ For a detailed list of options, please visit <https://developer.reviewpush.com/R
 Gets locations information by rating
 
 ```js
-ReviewPush.Location.byRating(options);
+ReviewPush.Locations.byRating(options);
 ```
 
 Options:
@@ -91,7 +91,7 @@ For a detailed list of options, please visit <https://developer.reviewpush.com/R
 Gets locations sentiment
 
 ```js
-ReviewPush.Location.getSentiment(options);
+ReviewPush.Locations.getSentiment(options);
 ```
 
 Options:
