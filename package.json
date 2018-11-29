@@ -1,6 +1,6 @@
 {
   "name": "reviewpush-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wrapper for reviewpush rest api",
   "main": "dist/index.js",
   "scripts": {
